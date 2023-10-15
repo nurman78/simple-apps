@@ -17,5 +17,23 @@ pipeline {
               echo "Test Apps"
             }
         }
+
+        stage('Build Images') {
+            steps {
+              echo "Build Images"
+            }
+        }
+
+        stage('Push Images') {
+            steps {
+              echo "Push Images"
+            }
+        }
+
+        stage('Deploy Apps') {
+            steps {
+              echo "Deploy Apps"
+            }
+        }
     }
 }
